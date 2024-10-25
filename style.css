@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-family: "Alexandria", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: absolute; /* Positionner le header au-dessus du carousel */
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10; /* S'assurer qu'il soit au-dessus du carousel */
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 4.8em;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 1.8em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    nav ul li {
+        font-size: 1em;
+    }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    height: 100%; /* Prendre toute la hauteur */
+    position: relative; /* Permettre aux images d'être positionnées en absolu */
+}
+
+.carousel-images img {
+    width: 100%; /* Prendre toute la largeur */
+    height: 100%; /* Prendre toute la hauteur */
+    object-fit: cover; /* Couvrir l'espace sans déformer l'image */
+    position: absolute; /* Positionner les images les unes sur les autres */
+    top: 0; /* S'assurer qu'elles sont en haut */
+    left: 0; /* S'assurer qu'elles sont à gauche */
+    opacity: 0; /* Initialiser l'opacité à 0 pour l'animation */
+    transition: opacity 1s ease-in-out; /* Transition pour l'opacité */
+}
+
+.carousel-images img.active {
+    opacity: 1; /* Mettre l'opacité à 1 pour l'image active */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Ajuster la hauteur de l'overlay selon vos besoins */
+    background: linear-gradient(to bottom, rgba(19, 19, 19, 0.7), rgba(19, 19, 19, 0));
+    z-index: 1; /* S'assurer que l'overlay est au-dessus des images */
+}
+
+
+.header-overlay {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10; /* S'assurer qu'il soit au-dessus de l'overlay */
+    color: #fff;
+    padding: 20px;
+}
+
+.carousel-img2, .carousel-img3, .carousel-img1 {
+    object-fit: cover; 
+    object-position: center top;
+}
+
+/* Media query pour ajuster l'affichage sur mobile */
+@media (max-width: 768px) {
+    .carousel {
+        height: 100vh; /* Ajuster la hauteur du carousel pour mobile */
+    }
+
+    .carousel-img2 {
+        object-position: 68% center; /* Décaler l'image vers la droite */
+    }
+    .carousel-img3 {
+        object-position: 30% center; 
+    }
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+
+
+
+
+/*SECTION ABOUT*/
+#about {
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Couleur de fond si vous en voulez une */
+    text-align: center; /* Centrer le contenu sur mobile */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* S'assurer que ça se plie sur mobile */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-photo img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* Cercle pour la photo */
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 20px;
+}
+
+.about-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.light-text {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Media query pour ajuster l'affichage sur mobile */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center; /* Centre les éléments sur mobile */
+    }
+
+    .about-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-text h1 {
+        font-size: 2em;
+    }
+
+    .light-text {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION PROJETS */
+
+.main-titre {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+#projects {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sections */
+.project {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Espacement vertical */
+    padding: 15px;
+}
+
+/* Titre du projet */
+.project-title {
+    font-size: 2.2em; /* Taille du texte */
+    font-weight: bold; /* Gras */
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+}
+
+/* Vidéos YouTube */
+.video-section {
+    font-family: "Zen Dots", sans-serif;
+    width: 48%; /* Largeur de la section vidéo */
+    float: left; /* Float à gauche */
+    margin-right: 2%; /* Espacement entre vidéo et autoportrait */
+}
+
+.videos {
+    display: flex;
+    flex-direction: column; /* Dispose les vidéos en colonne */
+    gap: 15px; /* Espacement entre les vidéos */
+}
+
+.videos iframe {
+    width: 100%; /* Utilise 100% de la largeur de son conteneur */
+    height: 315px; /* Hauteur fixe pour garder les proportions */
+}
+
+/* Autoportrait */
+.self-portrait-section {
+    font-family: "Limelight", sans-serif;
+    width: 48%; /* Largeur de la section autoportrait */
+    float: right; /* Float à droite */
+}
+
+.self-portrait-section img {
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Garde le ratio d'aspect */
+}
+
+/* Espace entre les sections */
+.clearfix {
+    clear: both; /* Efface le float */
+}
+
+.dogons-section {
+    font-family: "Slackey", sans-serif;
+}
+
+/* Images des Dogons */
+.dogons-section .images {
+    display: flex;
+    justify-content: space-between; /* Espace entre les colonnes */
+    gap: 15px;
+}
+
+.dogons-section .left-column,
+.dogons-section .right-column {
+    width: 48%; /* Chaque colonne occupe 48% de la largeur */
+}
+
+.dogons-section img {
+    max-width: 100%; /* Limite la largeur des images */
+    height: auto; /* Garde le ratio d'aspect */
+    object-fit: contain; /* Maintient le ratio sans déformation */
+}
+
+.animations-section {
+    font-family: "Michroma", sans-serif;
+}
+
+.photos-section{
+    font-family: "Nothing You Could Do", cursive;
+}
+
+/* Animations */
+.animations {
+    display: flex; /* Flexbox pour les vidéos */
+    gap: 15px; /* Espacement entre les vidéos */
+    flex-wrap: wrap;
+}
+
+.animations video {
+    max-width: calc(50% - 7.5px); /* Ajustez pour avoir 2 vidéos côte à côte */
+    height: auto; /* Garde le ratio d'aspect */
+}
+
+/* Photos et Dessins */
+.photos-section .photos,
+.drawings-section .drawings {
+    display: flex; /* Flexbox pour les images */
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne */
+    justify-content: space-between; /* Justifie l'espace entre les colonnes */
+}
+
+.photo-column,
+.drawing-column {
+    width: calc(50% - 10px); /* Chaque colonne occupe 50% de la largeur */
+    margin-bottom: 0px; /* Espacement vertical entre les lignes */
+}
+
+.photos-section img,
+.drawings-section img {
+    max-width: 100%; /* Limite la largeur des images */
+    height: auto; /* Garde le ratio d'aspect */
+    margin: 5px; /* Espacement entre les images */
+    object-fit: contain; /* Maintient le ratio sans déformation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-section,
+    .self-portrait-section {
+        float: none; /* Annule le float sur mobile */
+        width: 100%; /* Les vidéos et l'autoportrait prennent toute la largeur sur mobile */
+        margin-right: 0; /* Supprime le margin droit */
+    }
+
+    .dogons-section .left-column,
+    .dogons-section .right-column {
+        width: 100%; /* Chaque colonne prend toute la largeur sur mobile */
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .dogons-section img,
+    .photos-section img,
+    .drawings-section img {
+        max-width: 100%; /* Limite la largeur maximale */
+        object-fit: contain; /* Maintient le ratio sans déformation */
+    }
+
+    .animations video {
+        max-width: 100%; /* Les vidéos prennent toute la largeur en mobile */
+    }
+
+    .photo-column,
+    .drawing-column {
+        width: 100%; /* Chaque colonne prend toute la largeur sur mobile */
+    }
+}
+
+
+
+.mail {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #e08722;
+    margin-bottom: 35px;
+}
+
+
+
+
+
+
+
+
+
+/* Style du bouton de retour en haut */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px; /* Distance du bas de la fenêtre */
+    right: 30px; /* Distance de la droite de la fenêtre */
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #333; /* Couleur du bouton */
+    color: white;
+    border: none;
+    border-radius: 12px; /* Arrondir les bords */
+    cursor: pointer;
+    display: none; /* Par défaut, le bouton est caché */
+    z-index: 100; /* S'assure que le bouton est par-dessus les autres éléments */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #e08722; /* Couleur au survol */
+}
