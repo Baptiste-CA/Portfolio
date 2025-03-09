@@ -27,4 +27,4 @@ Merci de respecter mon travail et mes créations.
 
 ---
 
-© 2024 Baptiste Caboux Arcamone. Tous droits réservés.
+© 2025 Baptiste Caboux Arcamone. Tous droits réservés.
