@@ -10,176 +10,333 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Chango&family=Fugaz+One&family=Limelight&family=Michroma&family=Nothing+You+Could+Do&family=Slackey&family=Zen+Dots&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<style>@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+</style>      
 
-
+<link rel="icon" href="images/favicon_cv.jpg" type="image/x-icon">
 </head>
 <body>
-    <header class="header-overlay">
-        <h1>Mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Mes projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="carousel" class="carousel">
+<!--gros titre-->
+<header class="header-overlay">
+    <h1>Mon Portfolio</h1>
+</header>
+
+<!--Carousel-->
+<section id="carousel" class="carousel">
         <div class="carousel-images">
             <img class="carousel-img1 active" src="images/photos/img2_CABOUX_ARCAMONE_Baptiste.jpg" alt="Design 1">
-            <img class="carousel-img2" src="images/videos/Miniature_Xavier_et_les_Tchakoums.png" alt="Design 2">
-            <img class="carousel-img3" src="images/dessins/Anomalie_CABOUX_ARCAMONE_Baptiste.png" alt="Design 3">
-            <div class="overlay"></div> 
-        </div>
-    </section>
-
-    
-
-
-
-    <!-- Bouton de retour en haut -->
-<button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
-
-
-
-
-
-    <section id="about">
-        <div class="about-container">
-            <!-- Partie pour la photo -->
-            <div class="about-photo">
-                <img src="images/ma_photo.png" alt="Votre photo">
-            </div>
-    
-            <!-- Partie pour le texte -->
-            <div class="about-text">
-                <h1>Baptiste CABOUX ARCAMONE</h1>
-                <p class="light-text">Véritable couteau suisse du multimédia, je vous propose de jeter un oeil sur mes créations.</p>
-            </div>
-        </div>
-    </section>
-
-
-    
-
-   
-
-
-
-
-
-<!-- Section Projets -->
-<section id="projects">
-    <h1 class="main-titre">Mes Projets</h1>
-
-    <!-- Section 1: Vidéos YouTube -->
-    <div class="project video-section">
-        <h2 class="project-title">VIDEOS</h2>
-        <div class="videos">
-            <iframe src="https://www.youtube.com/embed/NU-UG70sXvI?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/6Jgwd7S8AUY?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <!-- Section 2: Autoportrait -->
-    <div class="project self-portrait-section">
-        <h2 class="project-title">AUTOPORTRAITS</h2>
-        <img src="images/autoportraits/CABOUX_ARCAMONE_autoportrait.png" alt="Autoportrait">
-    </div>
-
-    <!-- Espace entre les sections -->
-    <div class="clearfix"></div>
-
-    <!-- Section 3: Les Dogons en Lumière -->
-    <div class="project dogons-section">
-        <h2 class="project-title">LES MASQUES DOGONS EN LUMIERE</h2>
-        <div class="images">
-            <div class="left-column">
-                <img src="images/dogons/Affiche_DOGON_CABOUX_ARCAMONE_Baptiste.png" alt="Dogon 1">
-            </div>
-            <div class="right-column">
-                <img src="images/dogons/Projection_DOGON_CABOUX_ARCAMONE_Baptiste_1.png" alt="Dogon 3">
-                <img src="images/dogons/Projection_DOGON_CABOUX_ARCAMONE_Baptiste_2.png" alt="Dogon 4">
-                <img src="images/dogons/Magnet_DOGON_CABOUX_ARCAMONE_Baptiste.jpg" alt="Dogon 2">
-            </div>
-        </div>
-    </div>
-
-    <!-- Section 4: Animations -->
-    <div class="project animations-section">
-        <h2 class="project-title">ANIMATIONS</h2>
-        <div class="animations">
-            <video autoplay loop muted>
-                <source src="images/Animation/animation_milan_caboux_arcamone_baptiste.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la lecture vidéo.
-            </video>
-            <video autoplay loop muted>
-                <source src="images/Animation/lba_caboux_arcamone_baptiste.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la lecture vidéo.
-            </video>
-        </div>
-    </div>
-
-    <!-- Section 5: Photos -->
-    <div class="project photos-section">
-        <h2 class="project-title">PHOTOS</h2>
-        <div class="photos">
-            <div class="photo-column">
-                <img src="images/photos/img1_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 1">
-                <img src="images/photos/img2_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 2">
-            </div>
-            <div class="photo-column">
-                <img src="images/photos/img4_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 3">
-                <img src="images/photos/img5_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 4">
-            </div>
-            <div class="photo-column">
-                <img src="images/photos/img6_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 5">
-                <img src="images/photos/img7_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 6">
-            </div>
-            <div class="photo-column">
-                <img src="images/photos/img8_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 7">
-            </div>
-        </div>
-    </div>
-
-    <!-- Section 6: Dessins -->
-    <div class="project drawings-section">
-        <h2 class="project-title">DESSINS</h2>
-        <div class="drawings">
-            <div class="drawing-column">
-                <img src="images/dessins/The_Great_Hand_CABOUX_ARCAMONE_Baptiste.png" alt="Dessin 6">
-                <img src="images/dessins/Anomalie_CABOUX_ARCAMONE_Baptiste.png" alt="Dessin 2">
-                <img src="images/dessins/Paisible_vue_CABOUX_ARCAMONE_Baptiste.png" alt="Dessin 4">
-            </div>
-            <div class="drawing-column">
-                <img src="images/dessins/Complication_CABOUX_ARCAMONE_Baptiste.png" alt="Dessin 3">
-                <img src="images/dessins/Sentired_CABOUX_ARCAMONE_Baptiste.png" alt="Dessin 5">
-                <img src="images/dessins/AirPalm_Company_CABOUX_ARCAMONE_Baptiste.png" alt="Dessin 1">
-            </div>
-        </div>
-    </div>
+            <img class="carousel-img2" src="images/videos/Miniature_Xavier_et_les_Tchakoums.jpg" alt="Design 2">
+            <img class="carousel-img3" src="images/dessins/Anomalie_CABOUX_ARCAMONE_Baptiste.jpg" alt="Design 3">
+            <div class="overlay"></div> <!--fondu au noir-->
+        </div>  
+    <button class="btn-discover"><span>Découvrir</span></button>
 </section>
 
     
 
+<!-- Bouton de retour en haut -->
+<button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+<!--bouton de mnu hamburger disponible sur mobile-->
+<button class="mobile-toggle-btn">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</button>
+
+<!-- Sidebar mobile -->
+<div class="mobile-sidebar">
+    <div class="mobile-sidebar-content"> 
+        <h3>Menu</h3>
+        <ul>
+            <div class="trait"></div>
+            <li><a href="#about">BAPTISTE</a></li>
+            <li><a href="#cv-video">CV VIDEO</a></li>
+            <div class="trait"></div>
+            <li><a class="texte-1" href="#section-3d">3D - BLENDER</a></li>
+            <li><a class="texte-2" href="#section-videos">VIDEOS</a></li>
+            <li><a class="texte-3" href="#section-masques">LES MASQUES DOGONS EN LUMIERE</a></li>
+            <li><a class="texte-4" href="#section-animations">ANIMATIONS</a></li>
+            <li><a class="texte-5" href="#section-photos">PHOTOS</a></li>
+            <li><a class="texte-6" href="#section-dessins">DESSINS</a></li>
+            <div class="trait"></div>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--barre supérieur menu mobile-->
+<div class="menu-top"></div>
+<div class="menu-top-back"></div>
 
 
+<!-- Sidebar -->
+<!-- Conteneur principal sidebar+contenu-->
+<div class="page-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <button class="toggle-btn">
+                <div class="switch">
+                    <div class="slider"></div>
+                </div>
+            </button>
+            <h3>Menu</h3>
+           
+            <ul>
+                <div class="trait"></div>
+                <li><a href="#about">BAPTISTE</a></li>
+                <li><a href="#cv-video">CV VIDEO</a></li>
+                <div class="trait"></div>
+                <li><a class="texte-1" href="#section-3d">3D - BLENDER</a></li>
+                <li ><a class="texte-2" href="#section-videos">VIDEOS</a></li>
+                <li ><a class="texte-3" href="#section-masques">LES MASQUES DOGONS EN LUMIERE</a></li>
+                <li ><a class="texte-4" href="#section-animations">ANIMATIONS</a></li>
+                <li ><a class="texte-5" href="#section-photos">PHOTOS</a></li>
+                <li ><a class="texte-6" href="#section-dessins">DESSINS</a></li>
+                <div class="trait"></div>
+                <li ><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
 
 
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <h1 class="mail">Baptiste.cabouxarcamone@gmail.com</h1>
-    </section>
+    <!--contenu à droite de la sidebar-->
+    <div class="contenu">
 
-    <footer>
-        <p>&copy; 2024 Mon Portfolio | Tous droits réservés</p>
-    </footer>
+        <!--BIO-->
+        <!--Phrase d'accroche-->
+            <section id="about">
+                <div class="about-container">
+                    <!-- Partie pour la photo -->
+                    <div class="about-photo">
+                        <img class="image-effet" src="images/ma_photo.jpg" alt="Votre photo">
+                    </div>
+            
+                    <!-- Partie pour le texte -->
+                    <div class="about-text">
+                        <h1>Baptiste CABOUX ARCAMONE</h1>
+                        <p class="light-text">Véritable couteau suisse du multimédia, je vous propose de jeter un oeil à mes créations.</p>
+                    </div>
+                </div>
+            </section>
 
-    <script src="script.js"></script>
+        <!--mon cv video-->
+        <div id="cv-video" class="resize-cv-video">
+                <h2 class="main-titre">Mon CV vidéo</h2>
+            <div class="video-cv">
+                <iframe src="https://www.youtube.com/embed/-KFuFctyk84?controls=1&rel=0" frameborder="0" allowfullscreen></iframe> 
+            </div>
+        </div>
 
+        <!-- Section Projets -->
+        <section id="projects">
+                <h1 class="main-titre">Mes Projets</h1>
+                <!-- Section 6 : 3D -->
+                <div id="section-3d" class="project dim-section">
+                        <h2 class="project-title">3D - BLENDER</h2>
+                    <div class="dimstills">
+                            <p class="texte-infos texte-infos-espace">J'ai découvert très récemment la 3D via Blender, et je me suis pris de passion pour cet univers me permettant de façonner ce que j'imagine.</p>
+                        <div class="dim-column-h">
+                                <img class="image-effet max-width img-preview" src="images/3Dstills/Casque_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 1">
+                                <img class="image-effet max-width img-preview" src="images/3Dstills/Render_TD3_CABOUX _ARCAMONE_Baptiste.jpg" alt="Photo 2">
+                        </div>
+                            <p class="text-content text-content-back-3d">Des projets m'ayant permis d'apprendre la modélisation 3D, le texturing et la mise en scène.</p>
+                        <div class="dim-column-v-container">
+                            <div class="dim-column-v">
+                                <div class="box-content">
+                                    <div class="video-wrapper">
+                                        <iframe src="https://www.youtube.com/embed/04_ID6dJxJs?controls=1&rel=0" frameborder="0" allowfullscreen></iframe> 
+                                    </div>
+                                    <p class="text-content text-content-back-3d">Voici LIFEORB, une entreprise envoyant des "orbes de vie" sur des planètes mortes pour leur redonner vie. Le thème du projet était : écologie & reforestation.
+                                    </p>
+                                </div>
+                                <div class="box-content">
+                                    <div class="video-wrapper">
+                                        <iframe src="https://www.youtube.com/embed/_xk0Fa3zJKw?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <p class="text-content text-content-back-3d">La présentation dynamique d'un casque.</p>
+                                </div>
+                            </div>
+                            <div class="dim-column-v">  
+                                <div class="box-content">
+                                    <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/5ofUpfOcLYw?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <p class="text-content text-content-back-3d">Une animation mettant en scène liquide et fumée, au détour d'une tasse de café.</p>
+                                </div>
+                                <div class="box-content">
+                                    <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/4bLGzrKSAzg?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                    </div> 
+                                    <p class="text-content text-content-back-3d">Un travail mettant en scène la logique boid des particules, symbolisant ici des lucioles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Section 1: Vidéos YouTube -->
+                <div id="section-videos" class="project video-section">
+                    <h2 class="project-title">VIDEOS</h2>
+                    <div class="videos">
+                        <div class="video-column">
+                            <div class="box-content">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/G7nCqiyD5gE?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>      
+                                </div>
+                                    <p class="text-content text-content-back-videos">Un court métrage réalisé dans le cadre de la 9ème édition du concours Grand Angle. On y suit Marco et ses décisions.</p>
+                            </div>
+                            <div class="box-content">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/fuFZsbyE-go?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                </div> 
+                                    <p class="text-content text-content-back-videos">Court métrage réalisé dans le cadre du Nikon Film Festival 2025. Cette histoire nous montre Flynn, un homme tentant de survivre au piège mortel manigancé par Grim, un être mystérieux jouant avec la vie d'autrui.</p>
+                            </div>
+                        </div>
+                        <div class="video-column">
+                            <div class="box-content">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/NU-UG70sXvI?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <p class="text-content text-content-back-videos">Un documenteur mêlant humour et science-fiction, présentant d'étranges faits dans la maison de monsieur Xavier Piknou. Pour ce projet, nous devions réaliser une histoire gravitant autour de l'Intelligence Artificielle.</p>
+                            </div>
+                            <div class="box-content">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/6Jgwd7S8AUY?controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            <p class="text-content text-content-back-videos">Mon premier reportage, présentant la richesse naturelle de la forêt de Tronçais, son histoire, ses protecteurs, et les menaces planant au dessus...</p>
+                            </div>
+                        </div>           
+                    </div>
+                </div>
 
-    
+                <!-- Espace entre les sections -->
+                <div class="clearfix"></div>
+
+                <!-- Section 3: Les Dogons en Lumière -->
+                <div id="section-masques" class="project dogons-section">
+                    <h2 class="project-title">LES MASQUES DOGONS EN LUMIERE</h2>
+                    <p class="texte-infos texte-infos-espace">L'objectif était de préparer une exposition autour du peuple Dogon, proposée dans le musée des Arts d'Afrique et d'Asie de Vichy.</p>
+                    <div class="images">
+                        <div class="left-column">
+                            <div class="box-content">
+                                <img class="image-effet img-preview" src="images/dogons/Affiche_DOGON_CABOUX_ARCAMONE_Baptiste.png" alt="Dogon 1">
+                                <p class="text-content text-content-back-dogons">Mon idée était de réaliser un objet interactif projettant de la lumière sur un mur. Pour ce projet, je me suis penché sur le logiciel Blender afin de découvrir la 3D et pousser davantage mon idée.</p>
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <img class="image-effet img-preview" src="images/dogons/Projection_DOGON_CABOUX_ARCAMONE_Baptiste_1.jpg" alt="Dogon 3">
+                            <img class="image-effet img-preview" src="images/dogons/Projection_DOGON_CABOUX_ARCAMONE_Baptiste_2.jpg" alt="Dogon 4">
+                            <img class="image-effet img-preview" src="images/dogons/Magnet_DOGON_CABOUX_ARCAMONE_Baptiste.jpg" alt="Dogon 2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Animations -->
+                <div id="section-animations" class="project animations-section">
+                    <h2 class="project-title reduce-size-titre">ANIMATIONS</h2>
+                    <p class="texte-infos"> Travail de rebranding de la communauté de communes des rives du Haut-Allier.</p>
+                    <div class="animations">
+                        <video autoplay loop muted class="img-preview">
+                            <source src="images/Animation/animation_milan_caboux_arcamone_baptiste_crop.mp4" type="video/mp4">
+                            Votre navigateur ne prend pas en charge la lecture vidéo.
+                        </video>            
+                        <video autoplay loop muted class="img-preview">
+                            <source src="images/Animation/lba_caboux_arcamone_baptiste.mp4" type="video/mp4">
+                            Votre navigateur ne prend pas en charge la lecture vidéo.
+                        </video>
+                    </div>
+                    <p class="text-content text-content-back-animation">Deux animations en 2D ont été réalisées sur After Effects. L'oiseau représente un milan royal, animal présent en Auvergne. Pour le réaliser, je me suis servis de différentes photos et schémas, afin de reproduire son physique et son comportement, d'abord en pixels, puis en vectoriel.</p>
+                </div>
+
+                <!-- Section 5: Photos -->
+                <div id="section-photos" class="project photos-section">
+                    <h2 class="project-title">PHOTOS</h2>
+                    <div class="photos">
+                        <div class="photo-column">
+                            <img class="image-effet img-preview" src="images/photos/img1_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 1">
+                            <img class="image-effet img-preview" src="images/photos/img2_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 2">
+                        </div>
+                        <div class="photo-column">
+                            <img class="image-effet img-preview" src="images/photos/img4_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 3">
+                            <img class="image-effet img-preview" src="images/photos/img5_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 4">
+                        </div>
+                        <div class="photo-column">
+                            <img class="image-effet img-preview" src="images/photos/img6_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 5">
+                            <img class="image-effet img-preview" src="images/photos/img7_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 6">
+                        </div>
+                        <div class="photo-column">
+                            <img class="image-effet img-preview" src="images/photos/img8_CABOUX_ARCAMONE_Baptiste.jpg" alt="Photo 7">
+                            <p class="text-content text-content-back-photos">Voici des photos prises lors d'une sortie dans la forêt de Tronçais, témoignant la beauté et le caractère mystique de la nature. Cette dernière m'inspire énormément dans mon travail.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6: Dessins -->
+                <div id="section-dessins" class="project drawings-section">
+                    <h2 class="project-title">DESSINS</h2>
+                    <div class="drawings">
+                        <div class="drawing-column">
+                            <img class="image-effet img-preview" src="images/dessins/The_Great_Hand_CABOUX_ARCAMONE_Baptiste.jpg" alt="Dessin 6">
+                            <img class="image-effet img-preview" src="images/dessins/Anomalie_CABOUX_ARCAMONE_Baptiste.jpg" alt="Dessin 2">
+                            <img class="image-effet img-preview" src="images/dessins/Paisible_vue_CABOUX_ARCAMONE_Baptiste.jpg" alt="Dessin 4">
+                        </div>
+                        <div class="drawing-column">
+                            <img class="image-effet img-preview" src="images/dessins/Complication_CABOUX_ARCAMONE_Baptiste.jpg" alt="Dessin 3">
+                            <img class="image-effet img-preview" src="images/dessins/Sentired_CABOUX_ARCAMONE_Baptiste.jpg" alt="Dessin 5">
+                            <img class="image-effet img-preview" src="images/dessins/AirPalm_Company_CABOUX_ARCAMONE_Baptiste.png" alt="Dessin 1">
+                        </div>
+                        <p class="text-content text-content-back-dessins">Mes premiers pas dans le monde de la création numérique. C'est au travers de ces projets personnels que j'ai pu m'intéresser au logiciel Photoshop, et utiliser une tablette graphique.</p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <h1 class="mail">
+                <a class="mail-2" href="mailto:baptiste.cabouxarcamone@gmail.com">Baptiste.cabouxarcamone@gmail.com</a>
+            </h1>
+        </section>
+
+        <!--crédits-->
+        <footer>
+            <p>&copy; 2025 Mon Portfolio | Tous droits réservés</p>
+        </footer>
+
+    </div> <!--fermeture du contenu pour sidebar-->
+</div> <!--fermeture du container de la page-->
+
+<!--VISUALISEUR-->
+<!-- Lightbox (masqué par défaut) -->
+<div id="lightbox" class="hidden">
+    <span class="close">&times;</span> <!-- Bouton de fermeture -->
+
+    <div class="lightbox-content">
+        <img id="lightbox-image" src="" alt="Lightbox Image" class="hidden">
+        <video id="lightbox-video" autoplay loop muted class="hidden">
+            <source id="lightbox-video-source" src="" type="video/mp4">
+        </video>
+
+        <!-- Flèches normales sur PC (collées aux bords) -->
+        
+    </div>
+    <span class="nav prev">&#9665;</span>
+        <span class="nav next">&#9655;</span>
+
+    <!-- Flèches mobiles en bas -->
+    <div class="nav-container">
+        <span class="nav prev">&#9665;</span>
+        <span class="nav next">&#9655;</span>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
