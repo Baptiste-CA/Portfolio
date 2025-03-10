@@ -511,12 +511,20 @@ footer {
 .mail {
     margin-top: 20px;
     font-size: 1.3em;
-    color: #e08722;
     margin-bottom: 35px;
 }
 .mail-2 {
     text-decoration: none;
     color: #e08722;
+}
+a.mail-2 {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Aide à mieux capter le hover */
+}
+
+a.mail-2:hover {
+    color: #ed701c; /* Couleur au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille */
 }
 
 /* Style du bouton de retour en haut */
@@ -649,7 +657,7 @@ width: 100%;
 }
 
 .sidebar-content ul li {
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 .sidebar-content ul li a {
