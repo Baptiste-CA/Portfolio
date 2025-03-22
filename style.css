@@ -1030,7 +1030,10 @@ ul li a.texte-2 {
     margin: 20px auto 20px auto; /* Centrage du texte avec marge auto */
     word-spacing: 0.05em;
     hyphens: none;
-    text-justify: inter-word; /* Justification propre avec espaces équilibrés */
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 1em;
+    text-align-last: center;
 }
 
 .texte-infos-espace {
