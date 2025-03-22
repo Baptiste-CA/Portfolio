@@ -1076,6 +1076,9 @@ ul li a.texte-2 {
         padding-inline: 10px;
         font-size: 1.1em;
     }
+    .texte-infos {
+        text-align-last:left;
+    }
 }
 
 .text-content-back-3d {
