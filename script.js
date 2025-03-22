@@ -22,16 +22,27 @@ setInterval(() => changeSlide(1), 4000);
 
 
 
-//Bouton pour remonter
-// Afficher le bouton après avoir défilé de 300px
+// Bouton pour remonter
+// Afficher le bouton après avoir défilé de 300px et ajuster sa position en bas de page
 window.onscroll = function() {
     let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    let scrollHeight = document.documentElement.scrollHeight;
+    let scrollPosition = window.innerHeight + window.scrollY;
+
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         scrollToTopBtn.style.display = "block";
     } else {
         scrollToTopBtn.style.display = "none";
     }
+
+    // Ajuste la position du bouton si on est en bas de la page
+    if (scrollPosition >= scrollHeight - 10) { 
+        scrollToTopBtn.style.bottom = "80px"; // Ajuste la position pour ne pas coller au bas
+    } else {
+        scrollToTopBtn.style.bottom = "30px"; // Revient à la position initiale
+    }
 };
+
 
 // Fonction pour remonter en haut de la page
 function scrollToTop() {
