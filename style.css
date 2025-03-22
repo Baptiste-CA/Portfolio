@@ -181,7 +181,18 @@ footer {
     font-weight: 300;
     color: #555;
     line-height: 1.6;
+    text-align: justify;
+    margin: 12px auto 25px auto;
+    word-spacing: 0.05em;
+    hyphens: none;
+    text-justify: inter-word;
+    text-indent: 2em;
 }
+    
+    
+
+
+
 
 /* Media query pour ajuster l'affichage sur mobile */
 @media (max-width: 768px) {
@@ -517,6 +528,7 @@ footer {
     text-decoration: none;
     color: #e08722;
 }
+
 a.mail-2 {
     transition: color 0.3s ease, transform 0.3s ease;
     display: inline-block; /* Aide à mieux capter le hover */
@@ -526,6 +538,18 @@ a.mail-2:hover {
     color: #ed701c; /* Couleur au survol */
     transform: scale(1.05); /* Légère augmentation de la taille */
 }
+
+.imglinkedin {
+    width: 80px;
+    transition: transform 0.3s ease, fill 0.3s ease;
+    padding-bottom: 22px;
+}
+
+.imglinkedin:hover {
+    transform: scale(1.07); /* Agrandit légèrement */
+    filter: invert(15%) sepia(95%) saturate(3000%) hue-rotate(200deg) brightness(100%) contrast(90%);
+  }
+
 
 /* Style du bouton de retour en haut */
 #scrollToTopBtn {
@@ -542,7 +566,7 @@ a.mail-2:hover {
     display: none; /* Par défaut, le bouton est caché */
     z-index: 100; /* S'assure que le bouton est par-dessus les autres éléments */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    transition: bottom 0.5s ease-in-out, opacity 0.3s ease; /* Animation fluide */
 }
 
 #scrollToTopBtn:hover {
@@ -1027,11 +1051,12 @@ ul li a.texte-2 {
     font-family: "Alexandria", sans-serif;
     color: #555;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     word-spacing: 0.05em;
     hyphens: none;
     text-justify: inter-word;
     margin-bottom: 50px;
+    text-indent: 1em;
 }
 
 @media (max-width: 768px) {
@@ -1153,6 +1178,7 @@ ul li a.texte-2 {
     }
 }
 
+
 /* Image et vidéo */
 #lightbox img, #lightbox video {
     max-width: 100%;
@@ -1230,3 +1256,4 @@ ul li a.texte-2 {
         padding: 10px 25px;
     }
 }
+
