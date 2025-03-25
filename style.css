@@ -419,7 +419,7 @@ footer {
 
 .dogons-section .left-column,
 .dogons-section .right-column {
-    width: 48%; /* Chaque colonne occupe 48% de la largeur */
+    width: 50%; /* Chaque colonne occupe 48% de la largeur */
 }
 
 .dogons-section img {
