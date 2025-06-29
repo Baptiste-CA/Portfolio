@@ -1,6 +1,6 @@
 # Portfolio - Baptiste Caboux Arcamone
 
-Bienvenue sur mon portfolio. [https://baptiste-ca.github.io/Portfolio]
+Bienvenue sur mon portfolio. [https://baptiste-ca.github.io]
 
 ## Droits d'auteur et conditions d'utilisation
 
