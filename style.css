@@ -43,6 +43,37 @@ nav ul li a {
     text-decoration: none;
 }
 
+.mail {
+    margin-top: 20px;
+    font-size: 1.3em;
+    margin-bottom: 35px;
+}
+.mail-2 {
+    text-decoration: none;
+    color: #e08722;
+}
+
+a.mail-2 {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Aide à mieux capter le hover */
+}
+
+a.mail-2:hover {
+    color: #ed701c; /* Couleur au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille */
+}
+
+.imglinkedin {
+    width: 80px;
+    transition: transform 0.3s ease, fill 0.3s ease;
+    padding-bottom: 22px;
+}
+
+.imglinkedin:hover {
+    transform: scale(1.07); /* Agrandit légèrement */
+    filter: invert(15%) sepia(95%) saturate(3000%) hue-rotate(200deg) brightness(100%) contrast(90%);
+  }
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
@@ -337,7 +368,7 @@ footer {
     flex-direction: column;
 
     border: 5px solid;
-    border-color:#cedfa7;
+    border-color:#b8e2a4;
   
 }
 
@@ -402,11 +433,69 @@ footer {
     clear: both; /* Efface le float */
 }
 
+
+.vertical-centre-container {
+    display: flex;
+  align-items: stretch; /* les colonnes auront même hauteur */
+}
+
+.vertical-centre-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.bloc-blanc {
+    margin-bottom: 25px ;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(80, 80, 80, 0.39);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.stage-section {
+    font-family: "Golos Text", sans-serif;
+    border: 5px solid;
+    border-color:#e9a9a9;
+}
+
+/* Images des Dogons */
+.stage-section .images {
+    display: flex;
+    justify-content: space-between; /* Espace entre les colonnes */
+    gap: 15px;
+}
+
+
+.stage-section .left-column,
+.stage-section .right-column {
+    width: 50%; /* Chaque colonne occupe 48% de la largeur */
+}
+
+.stage-section img {
+    max-width: 100%; /* Limite la largeur des images */
+    height: auto; /* Garde le ratio d'aspect */
+    object-fit: contain; /* Maintient le ratio sans déformation */
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .dogons-section {
     font-family: "Slackey", sans-serif;
 
     border: 5px solid;
-    border-color:#e9b6a9;
+    border-color:#e9dda9;
 }
 
 /* Images des Dogons */
@@ -447,6 +536,11 @@ footer {
     height: auto; /* Garde le ratio d'aspect */
 }
 
+.stage-animations video {
+    max-width: 100%; /* Ajustez pour avoir 2 vidéos côte à côte */
+    height: auto; /* Garde le ratio d'aspect */
+}
+
 .photos-section{
     font-family: "Nothing You Could Do", cursive;
 
@@ -481,6 +575,17 @@ footer {
     object-fit: contain; /* Maintient le ratio sans déformation */
 }
 
+    .barre-stage {
+    width: 90%;
+    height: 0px;
+    margin: 0px auto;
+    background-color: #cacaca00;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 5px 4px rgba(156, 156, 156, 0);
+    }
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     
@@ -494,6 +599,11 @@ footer {
    
     .dogons-section .left-column,
     .dogons-section .right-column {
+        width: 100%; /* Chaque colonne prend toute la largeur sur mobile */
+    }
+
+    .stage-section .left-column,
+    .stage-section .right-column {
         width: 100%; /* Chaque colonne prend toute la largeur sur mobile */
     }
 
@@ -517,6 +627,32 @@ footer {
     .drawing-column {
         width: 100%; /* Chaque colonne prend toute la largeur sur mobile */
     }
+
+
+    .bloc-blanc {
+    margin-bottom: 0px ;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    }
+
+
+    .barre-stage {
+    width: 90%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #e9a9a9;
+}
+
+.switch-column-responsive-1 {
+    order: 2;
+}
+
+.switch-column-responsive-2 {
+    order: 1;
 }
 
 .mail {
@@ -549,7 +685,7 @@ a.mail-2:hover {
     transform: scale(1.07); /* Agrandit légèrement */
     filter: invert(15%) sepia(95%) saturate(3000%) hue-rotate(200deg) brightness(100%) contrast(90%);
   }
-
+}
 
 /* Style du bouton de retour en haut */
 #scrollToTopBtn {
@@ -979,7 +1115,7 @@ width: 100%;
     text-decoration: none;
     font-size: 18px;
     display: block;
-    padding: 10px;
+    padding: 6px;
     transition: background 0.3s;
 }
 
@@ -988,7 +1124,7 @@ width: 100%;
 }
 
 /* SMOOTHNESS */
-.image-effet, .video-wrapper, .video-cv {
+.image-effet, .video-wrapper, .video-cv, .img-preview {
     border-radius: 7px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide pour le zoom et l'ombre */
 }
@@ -1004,10 +1140,10 @@ ul li a.texte-1 {
    color :#e6c4a3 
 }
 ul li a.texte-2 {
-    color :#cedfa7 
+    color :#b8e2a4 
  }
  ul li a.texte-3 {
-    color :#e9b6a9 
+    color :#e9dda9 
  }
  ul li a.texte-4 {
     color :#b1d9e0 
@@ -1017,6 +1153,9 @@ ul li a.texte-2 {
  }
  ul li a.texte-6 {
     color :#e2b2d0 
+ }
+ ul li a.texte-7 {
+    color :#e9a9a9 
  }
 
 /*texte informatif sur les projets*/
@@ -1062,10 +1201,31 @@ ul li a.texte-2 {
     text-indent: 1em;
 }
 
+.text-content-v2 {
+    text-align: justify;
+    margin: 12px auto 25px auto;
+    font-weight: 300;
+    font-size: 1.3em;
+    font-family: "Alexandria", sans-serif;
+    color: #555;
+    width: 100%;
+    max-width: 1100px;
+    word-spacing: 0.05em;
+    hyphens: none;
+    text-justify: inter-word;
+    text-indent: 1em;
+}
+
 @media (max-width: 768px) {
     .text-content {
         font-size: 1.1em;
+        margin-bottom: 15px;
     }
+    .text-content-v2 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
     #projects {
         padding: 10px;
     }
@@ -1079,6 +1239,13 @@ ul li a.texte-2 {
     .texte-infos {
         text-align-last:left;
     }
+
+    .space-1 {
+        margin-bottom: 50px;
+    }
+    .space-2 {
+        margin-bottom: 60px;
+    }
 }
 
 .text-content-back-3d {
@@ -1091,6 +1258,13 @@ ul li a.texte-2 {
 .text-content-back-videos {
     /*Ajout du fond rectangulaire */
     background: linear-gradient(to right, rgba(255,255,255,0) 0%,  #c2c2c234, #a4d87933, rgba(255,255,255,0) 100%);
+    padding: 15px 25px;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    position: relative;
+}
+.text-content-back-stage {
+    /*Ajout du fond rectangulaire */
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,  #c2c2c234, #e9a9a934, rgba(255,255,255,0) 100%);
     padding: 15px 25px;
     border-radius: 8px; /* Coins légèrement arrondis */
     position: relative;
@@ -1240,6 +1414,12 @@ ul li a.texte-2 {
     display: none; /* Masqué par défaut */
 }
 
+.logo-nexus {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* Sur mobile, flèches en bas et visibles */
 @media (max-width: 768px) {
     .nav {
@@ -1261,5 +1441,36 @@ ul li a.texte-2 {
         font-size: 35px;
         padding: 10px 25px;
     }
+
+    .logo-nexus {
+    width: 80%;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
+}
+
+.right-column-v3{
+        width: 50%;
+    }
+
+@media (max-width: 1100px) {
+     .elements-colone {
+        flex-direction: column;
+    }
+    .left-column-v3{
+        width: 100%;
+    }
+    .right-column-v3{
+        width: 100%;
+    }
+
+    .switch-column-responsive-1-v2 {
+    order: 2;
+    }
+
+    .switch-column-responsive-2-v2 {
+        order: 1;
+    }
+}
+   
 
